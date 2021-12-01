@@ -15,8 +15,9 @@ def part_1(input: list[int])-> int:
             increase += 1
     return increase
 
-print(part_1(test_input))
-print(part_1(input))
+print('Part 1')
+print('test_input:',part_1( test_input) , '== 7')
+print('input:', part_1(input))
 
 def part_2(input: list[int])-> int:
     increase = 0
@@ -25,5 +26,6 @@ def part_2(input: list[int])-> int:
             increase += 1
     return increase
 
-print(part_2(test_input))
-print(part_2(input))
+print('Part 2')
+print('test_input:', part_2(test_input), '== 5')
+print('input:', part_2(input))
