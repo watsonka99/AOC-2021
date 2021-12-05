@@ -60,7 +60,6 @@ print(part_1(seq, board))
 def part_2(seq, boards):
     deleted = False
     for number in seq:
-        print(number)
         i = 0
         while (i < (len(boards))):
             for row in boards[i]:
@@ -72,13 +71,11 @@ def part_2(seq, boards):
                                 del boards[i]
                                 deleted = True
                             else:
-                                print(boards[i])
                                 sum = 0
                                 for row in boards[i]:
                                     for num in row:
                                         if num is not None:                                
                                             sum += num
-                                print(sum, number)
                                 return sum * number
             if deleted == True:
                 deleted = False
